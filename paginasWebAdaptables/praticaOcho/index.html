@@ -1,12 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <H1>Practica 8 | Bootstrap </H1>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boostrap Login</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- main container -->
+    <div class="container d-flex justify-content-center align-items-center min-vh-100">
+      <!-- Login Container -->
+      <div class="row border rounded-5 p-3 bg-white shadow box-area">
+        <!-- Left box -->
+
+        <div class="col-md-6 rounded-5  left-box justify-content-center">
+            <div class="featured-image d-flex flex-column justify-content-center align-items-center bg-primary p-3 rounded-5">
+                <img
+                    src="images/image.jpg"
+                    class="img-fluid rounded-5 mb-3"
+                    style= "width: 250px"
+                    alt=""
+                />
+
+                <p class="text-white">2025</p>
+                <small class="text-white text-wrap">Universidad de Oriente</small>
+                
+            </div>
+        </div>
+
+        <!-- Right box -->
+
+        <div class="col-md-6 right-box">
+            
+            <div class="row align-items-center ">
+                <div class="header-text m">
+                    <h2>Welcome</h2>
+                    <p>Practica 8</p>
+                </div>
+
+                <div class="input-group mb-3">
+                    <input class="form-control form-control-lg bg-light fs-6" type="text" placeholder="Ingresa tu usuario">
+                </div>
+
+                <div class="input-group mb-1">
+                    <input class="form-control form-control-lg bg-light fs-6" type="password" placeholder="Ingresa tu contraseña">
+                </div>
+
+
+                <div class="input-group mb-5 d-flex justify-content-between">
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="checkBox" placeholder="text">
+                        <label for="checkBox" class="form-check-label text-secondary">Recuerdame</label>
+                    </div>
+
+                    <div class="forgot">
+                        <small><a href="#">Olvide mi contraseña</a></small>
+                    </div>
+                </div>
+
+
+                <div class="input-group mb-3">
+                    <button class="btn btn-lg btn-primary w-100 fs-6">Login</button>
+                </div>
+
+                <div class="input-group mb-3">
+                    <button class="btn btn-lg btn-light w-100 fs-6"><img style="width: 50px;" src="images/google.png" alt=""> <small>Iniciar Sesion con gugul</small></button>
+                </div>
+
+
+                <div class="row">
+                    <small>No tienes una cuenta? <a href="#">Registrarme</a> </small>
+                </div>
+
+            </div>
+
+        </div>
+
+
+      </div>
+    </div>
+  </body>
 </html>
