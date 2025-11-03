@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Práctica 11 | Alineación Bootstrap</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+</head>
+
+<body class="p-4">
+
+  <h2 class="text-center mb-4">Práctica 11 - Alineación con Bootstrap</h2>
+
+  <!--  Uso de flex-fill -->
+  <h4>Distribución flexible con <code>d-flex</code> y <code>flex-fill</code></h4>
+  <div class="contenedor d-flex">
+    <div class="item">Caja 1</div>
+    <div class="item flex-fill">Caja 2 (flex-fill)</div>
+    <div class="item">Caja 3</div>
+  </div>
+
+  <!-- Alineación vertical -->
+  <h4>Alineación vertical con <code>align-items</code></h4>
+  <div class="contenedor d-flex align-items-start">
+    <div class="caja1">Caja 1</div>
+    <div class="caja2">Caja 2</div>
+    <div class="caja3">Caja 3</div>
+  </div>
+
+  <!--  Alineación individual -->
+  <h4>Alineación individual con <code>align-self</code></h4>
+  <div class="contenedor d-flex justify-content-center align-items-start">
+    <div class="item align-self-start">Arriba</div>
+    <div class="item align-self-center">Centro</div>
+    <div class="item align-self-end">Abajo</div>
+    <div class="item align-self-baseline">Baseline</div>
+    <div class="item align-self-stretch">Stretch</div>
+  </div>
+
+</body>
+</html>
